@@ -9,7 +9,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 app = Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:root@127.0.0.1:8889/BD_FARMERS"
-app.config['SECRET_KEY'] = "This is super Duper Key, walk!"
+app.config['SECRET_KEY'] = "This is super Duper Key of master, walk!"
 db = SQLAlchemy(app)
 
 
