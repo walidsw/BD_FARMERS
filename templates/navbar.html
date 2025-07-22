@@ -1,0 +1,31 @@
+
+<div style="height: 50px; width: 100%; background: linear-gradient(to right, #17de09, #cae134);"></div>
+<div class="navbar">
+    <div class="navbar-left">
+        <a href="{{ url_for('home')}}" class='circle_link'> Home </a>
+        <a href="{{ url_for('product')}}" class='circle_link'> Product </a>
+        <a href="{{ url_for('services')}}" class='circle_link'> Services </a>
+        <a href="{{ url_for('contact')}}" class='circle_link'> Contact </a>
+    </div>
+    <div class="navbar-right">
+        {% if current_user.is_authenticated %}
+            <div class="user-info">
+                <div class="user-name">Hi, {{ current_user.Name }}</div>
+                <div class="user-email">{{ current_user.Email }}</div>
+            </div>
+            <a href="{{ url_for('logout') }}" class="circle_link">Logout</a>
+        {% else %}
+            <a href="{{ url_for('login')}}" class='circle_link'>Login</a>
+            <a href="{{ url_for('signup')}}" class='circle_link'>SignUp</a>
+        {% endif %}
+    </div>
+
+
+</div>
+<div style="height: 50px; width: 100%; background: linear-gradient(to right, #17de09, #cae134);"></div>
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #48dd0d, #1656d6);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========== LOGIN CARD ========== */
+.login-container {
+  position: relative;
+  z-index: 1;
+  width: 360px;
+  margin: 80px auto 40px;
+  padding: 30px 40px;
+  background: linear-gradient(to right, #e2e5e1, #81e83d);
+  border-radius: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.login-container label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #222;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1.5px solid #36b5e8;
+  border-radius: 36px;
+  font-size: 15px;
+}
+
+.login-container input[type="submit"] {
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  background-color: #fb1ff7;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 36px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container input[type="submit"]:hover {
+  background-color: #e2fa6b;
+}
+
+.footer-text {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.footer-text a {
+  color: #ee560a;
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}

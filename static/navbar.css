@@ -1,0 +1,87 @@
+.circle_link {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 50px;
+    background-color: #1aca34;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+.navbar{
+    background:#ffffff;
+    display:flex;                 
+    justify-content:space-between;
+    align-items:center;
+    padding:1.5rem 3vw;   
+    border-radius: 25px;       
+}
+
+.navbar-left,
+.navbar-right {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.navbar a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+.navbar a:hover{
+    color: blue;
+    background-color: aquamarine;
+}
+.navbar a:focus{
+    color: yellow;
+}
+.navbar a:active{
+    color: red;
+    background-color: #d1f299;
+}
+
+.custom-alert {
+    padding: 14px 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+    background-color: #e6ffed;
+    color: #000502;
+    border: 1px solid #66ff99;
+    border-radius: 8px;
+    font-weight: bold;
+    position: relative;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.custom-alert .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    color: #006b2e;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.user-info {
+  display: inline-block;
+  margin-right: 18px;
+  text-align: right;
+}
+
+.user-name {
+  font-weight: bold;
+  color: #020000;
+  font-size: 20px;
+}
+
+.user-email {
+  font-size: 16px;
+  color: #000000;
+}

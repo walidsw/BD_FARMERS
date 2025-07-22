@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='navbar.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='product.css')}}">
+</head>
+<body>
+
+    {% include 'navbar.html' %}
+    <br>
+
+    <h2 class='h2-class'>Choose Your Product Category</h2>
+    
+    <br><br><br><br>
+    
+    <div class='product-row'>
+        <a href="/product/fish">
+            <div class="product-circle">
+                <img src="{{ url_for('static', filename='/images/fish.png') }}">
+            </div>
+        </a>
+
+        <a href="/product/cow">
+            <div class="product-circle">
+                <img src="{{ url_for('static', filename='/images/cow.png') }}">
+            </div>
+        </a>
+
+        <a href="/product/duck">
+            <div class="product-circle">
+                <img src="{{ url_for('static', filename='/images/duck.png') }}">
+            </div>
+        </a>
+
+        <a href="/product/paddy">
+            <div class="product-circle">
+                <img src="{{ url_for('static', filename='/images/paddy.png') }}">
+            </div>
+        </a>
+
+        <a href="/product/rooster">
+            <div class="product-circle">
+                <img src="{{ url_for('static', filename='/images/rooster.png') }}">
+            </div>
+        </a>
+
+        <a href="/product/goat">
+            <div class="product-circle">
+                <img src="{{ url_for('static', filename='/images/goat.png') }}">
+            </div>
+        </a>
+
+       
+
+        
+    </div>
+    
+
+</body>
+</html>
